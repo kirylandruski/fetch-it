@@ -56,7 +56,7 @@ class FetchIt {
     let promise = global.Promise.resolve(request);
     let chain = [global.fetch, undefined];
 
-    for (let middleware of this.middlewares.reverse()) {
+    for (let middleware of this.middlewares.slice(0).reverse()) {
       chain.unshift(middleware.request, middleware.requestError);
       chain.push(middleware.response, middleware.responseError);
     }
