@@ -2,7 +2,7 @@
   "name": "fetch-it",
   "version": "0.3.0",
   "description": "An extended version of window.fetch with interceptors and configurable instances",
-  "main": "dist/fetch-it.js",
+  "main": "src/fetch-it.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf dist && $(npm bin)/webpack",
